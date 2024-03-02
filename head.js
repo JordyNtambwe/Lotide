@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   };
 
   const head = function(firstElement) {
-    console.log(firstElement[0]);
+    return firstElement[0]
   }
 
 
