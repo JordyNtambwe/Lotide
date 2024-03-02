@@ -16,6 +16,10 @@ assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
+// TEST CODE #2
+assertEqual(tail(["test"]).length, 0) // tail of array with one element only should be empty
+assertEqual(tail([]).length, 0) // tail of an empty array should also be empty
+
 // Test Case: Check the original array 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
