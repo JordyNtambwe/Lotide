@@ -16,7 +16,7 @@ assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
-// TEST CODE #2
+// TEST CODE #2: Check if tail returns an empty array
 assertEqual(tail(["test"]).length, 0) // tail of array with one element only should be empty
 assertEqual(tail([]).length, 0) // tail of an empty array should also be empty
 
