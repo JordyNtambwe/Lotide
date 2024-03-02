@@ -6,6 +6,7 @@ const assertEqual = function(actual, expected) {
     }
   };
 
+// Function returns the first element of the array!
   const head = function(array) {
     return array[0];
   }
