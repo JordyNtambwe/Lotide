@@ -8,8 +8,8 @@ const assertEqual = function(actual, expected) {
 
 // The "head" function returns the first element of the array!
   const head = function(array) {
-    if (array.length === "0") {
-    return "null"
+    if (array.length === 0) {
+    return null
     }
     return array[0];
   }
