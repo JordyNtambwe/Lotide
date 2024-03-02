@@ -11,6 +11,7 @@ const tail = function(array) {
 };
 
 // TEST CODE #1
+// This test code is checking to see if the correct element/elements are being returned
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
