@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 
 
   const eqArrays = function (array1, array2) {
-    
+
     if (!array1 || !array2) {
     return false;
     }
@@ -28,3 +28,4 @@ const assertEqual = function(actual, expected) {
 
   // TEST CODE
   assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)
+  assertEqual(eqArrays([1, 2, 3], [1, 2, 4]), false)
