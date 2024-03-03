@@ -25,8 +25,8 @@ const assertArraysEqual = function (array1, array2) {
     }
 }
 // TEST CODE
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 4]), false)
-assertArraysEqual(eqArrays([], []), true)
-assertArraysEqual(eqArrays(["test", "123"], ["test", "123"]), true)
-assertArraysEqual(eqArrays(["test", "123"], ["tes", "123"]), false)
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]))
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 4]))
+assertArraysEqual(eqArrays([], []))
+assertArraysEqual(eqArrays(["test", "123"], ["test", "123"]))
+assertArraysEqual(eqArrays(["test", "123"], ["tes", "123"]))
