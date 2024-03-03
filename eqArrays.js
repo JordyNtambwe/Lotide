@@ -18,8 +18,8 @@ const assertEqual = function(actual, expected) {
       if (array1[i] !== array2[i]) {
         return false;
       }
-      return true;
     }
+    return true;
   };
 
 
