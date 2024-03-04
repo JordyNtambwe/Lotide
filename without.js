@@ -25,7 +25,7 @@ const eqArrays = function (array1, array2) {
     return true;
     
   };
-
+// The without function takes two arrays as arguments, and returns a copy of the first array with any elements present in the second array removed
 const without = function(source, itemsToRemove) {
 
   let newArray =  [] // This line declares a new variable, "newArray" as an empty array, where the list of filtered items with be stored
