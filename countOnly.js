@@ -12,15 +12,15 @@ const assertEqual = function(actual, expected) {
     const results = {};
   
     for (const item of allItems) {
+      if(itemsToCount[item]) {
       if (results[item]) {
-        if(itemsToCount[item])
         results[item] += 1;
       } else {
         results[item] = 1;
       }
       console.log(item);
     }
-  
+   }
     return results;
   }
 
