@@ -25,6 +25,8 @@ const eqArrays = function (array1, array2) {
     return true;
     
   };
+
+
 const middle = function(array) {
 
   if(array.length < 3) {
