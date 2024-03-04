@@ -40,11 +40,11 @@ for(let i = 0; i < sentence.length; i++) {
   }
  }
  return results
- 
+
 }
 
 // TEST CODE
 
-assertArraysEqual((letterPositions("hello").e), [1]);//should pass
-assertArraysEqual((letterPositions("hello").l), [2, 3]);//should pass
-assertArraysEqual((letterPositions("hello").h), [1]);// should fail
+assertArraysEqual((letterPositions("hello").e), [1]);
+assertArraysEqual((letterPositions("hello").l), [2, 3]);
+assertArraysEqual((letterPositions("hello").h), [1]);
