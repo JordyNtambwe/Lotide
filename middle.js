@@ -27,7 +27,7 @@ const eqArrays = function (array1, array2) {
   };
 const middle = function(array) {
 
-  if(!array.length) {
+  if(array.length < 3) {
     return [];
   }
 
