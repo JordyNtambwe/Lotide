@@ -12,7 +12,7 @@ const countLetters = function(string) {
   let results = {}
 
   for(const items of string) {
-    if(space !== " ") {
+    if(items !== " ") {
       if(results[items]) {
         results[items] += 1
       } else {
