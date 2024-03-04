@@ -28,20 +28,21 @@ const eqArrays = function (array1, array2) {
 
 const without = function(source, itemsToRemove) {
 
-  let newArray =  []
-  for(let i = 0; i < source.length; i++) {
-        if(!itemsToRemove.includes(source[i])) {
-            newArray.push(source[i])
+  let newArray =  [] // This line declares a new variable, "newArray" as an empty string, where the list of filtered items with be stored
+  for(let i = 0; i < source.length; i++) { // This line iterates through the "source" list
+        if(!itemsToRemove.includes(source[i])) { // This line checks if any items from the "source" list is also present in the "itemsToRemove" list using the "includes" method
+            newArray.push(source[i]); // This line adds the current items from the "source" list into the "newArray"
      }
     }
     return newArray
   }
 
-//Test Code
-assertArraysEqual(without([1, 2, 3], [1]), [2,3]) // => [2, 3]
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]) // => ["1", "2"]
+//TEST CODE #1
+assertArraysEqual(without([1, 2, 3], [1]), [2,3])
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"])
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2", "3"]);
 
-
+// TEST CODE #2
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
