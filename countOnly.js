@@ -24,6 +24,14 @@ const assertEqual = function(actual, expected) {
     return results;
   }
 
+  const objectKeys = Object.keys(object)
+for(const key of objectKeys) {
+  if(object[key] === value) {
+    return key
+  }
+}
+}
+
 const firstNames = [
     "Karl",
     "Salima",
