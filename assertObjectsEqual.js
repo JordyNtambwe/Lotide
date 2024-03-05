@@ -30,3 +30,4 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 // TEST CODE
+assertObjectsEqual(eqObjects(([1, 2, 3], [1, 2, 3])))
