@@ -37,19 +37,15 @@ if(keys1.length !== keys2.length) {
 
 for(const key of keys1) { // key = colors, key = size
   if(Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-    if(!eqArrays(object1[key]), object2[key]) {
+    if(!eqArrays(object1[key], object2[key])) {
       return false
     }
-  }
-  if(object1[key] !== object2[key]) {
+  } else if (object1[key] !== object2[key]) {
   return false
   }
-
-
 }
 return true
 }
-
 
 // TEST CODE
 
