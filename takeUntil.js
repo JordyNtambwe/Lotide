@@ -33,7 +33,6 @@ const takeUntil = function(array, callback) {
       return array.slice(0, i);
     }
   }
-  return results
 }
 
 // TEST CODE
