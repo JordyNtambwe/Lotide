@@ -9,7 +9,6 @@ const findKey            = require('./findKey');
 const findKeyByValue     = require('./findKeyByValue');
 const head               = require('./head');
 const letterPositions    = require('./letterPositions');
-const map                = require('./map');
 const middle             = require('./middle');
 const tail               = require('./tail');
 const takeUntil          = require('./takeUntil');
@@ -27,7 +26,6 @@ module.exports = {
   findKeyByValue,
   head,
   letterPositions,
-  map,
   middle,
   tail,
   takeUntil,
