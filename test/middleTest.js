@@ -13,4 +13,8 @@ describe("#middle", () => {
 // assertArraysEqual(middle([1, 2, 3]), [2])
 // assertArraysEqual(middle([1, 2, 3, 4, 5]), [3])
 // assertArraysEqual(middle([1, 2, 3, 4]), [2, 3])
+<<<<<<< HEAD
 // assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
+=======
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
+>>>>>>> aafe260c2909f5bee1a73880799d00f9b9531419

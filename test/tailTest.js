@@ -21,4 +21,8 @@ describe("#tail", () => {
 // // TEST CODE #3
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
 // assertEqual(words.length, 3); 
+<<<<<<< HEAD
 // assertEqual(tail(words).length, words.length - 1);
+=======
+// assertEqual(tail(words).length, words.length - 1);
+>>>>>>> aafe260c2909f5bee1a73880799d00f9b9531419
