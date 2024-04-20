@@ -4,8 +4,7 @@ const assertEqual = function(actual, expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-  Created a function that returns the first item in an array
+    
 };
 
 const head = function(firstItem) {
