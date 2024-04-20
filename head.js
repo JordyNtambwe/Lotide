@@ -5,5 +5,15 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
-  
+  Created a function that returns the first item in an array
 };
+
+const head = function(firstItem) {
+
+  return firstItem[0];
+
+};
+
+// TEST CODE
+assertEqual(head([5, 6, 7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
