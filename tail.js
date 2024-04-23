@@ -20,10 +20,10 @@ tail(words);
 assertEqual(words.length, 3); // original array should still have 3 elements!
 
 // Test Case #2: Check the returned array
-const wordsTail = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(wordsTail.length, 2); // returned array should have 2 elements
-assertEqual(wordsTail[0], "Lighthouse"); // first element should be "Lighthouse"
-assertEqual(wordsTail[1], "Labs"); // second element should be "Labs"
+const results = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(results.length, 2); // returned array should have 2 elements
+assertEqual(results[0], "Lighthouse"); // first element should be "Lighthouse"
+assertEqual(results[1], "Labs"); // second element should be "Labs"
 
 // Test Case #3: Check arrays with one or zero elements
 assertEqual(tail(["test"]).length, 0); // array with one element should return empty array
