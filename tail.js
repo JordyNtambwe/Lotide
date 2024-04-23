@@ -10,8 +10,9 @@ const assertEqual = function(actual, expected) {
 
 const tail = function(array) {
 
-  return array.slice(0)
+  return array.slice[1]
 
+  
 }
 
 
