@@ -10,12 +10,6 @@ const assertEqual = function(actual, expected) {
 
 const tail = function(array) {
 
-  for (let i = 0; i < array.length; i++) {
-    if (array.slice(1) === array.length - 1) {
-      if (array[0] !== array[1]) {
-      }
-    }
-  }
   return array.slice(1)
 
 }
