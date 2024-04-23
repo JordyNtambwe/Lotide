@@ -11,13 +11,13 @@ const assertEqual = function(actual, expected) {
 // The tail function takes an array as a parameter and returns a new array with the first element removed.
 const tail = function(array) {
 
-  return array.slice(1)
+  return array.slice(1);
 
-}
+};
 
 // Test Case #1: Check the original array
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); 
+tail(words);
 assertEqual(words.length, 3); // original array should still have 3 elements!
 
 // Test Case #2: Check the returned array
