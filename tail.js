@@ -8,6 +8,7 @@ const assertEqual = function(actual, expected) {
   
 };
 
+// The tail function takes an array as a parameter and returns a new array with the first element removed.
 const tail = function(array) {
 
   return array.slice(1)
