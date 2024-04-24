@@ -15,7 +15,7 @@ const tail = function(array) {
 
 };
 
-// Test Case #1: Check the original array
+// Test Case #1: Check the original arra
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
 assertEqual(words.length, 3); // original array should still have 3 elements!
