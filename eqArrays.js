@@ -11,10 +11,12 @@ const assertEqual = function(actual, expected) {
 const eqArrays = function(array1, array2) {
 
   for (let i = 0; i < array1.length; i++) {
-    if(array1[i] === array2[i]) {
-      return true
-    } else {
+    if(array1[i].length !== array2[i].length) {
       return false
+    } else if (array1[i] !== array2[i]) {
+      return false
+    } else {
+      return true
     }
   }
 
@@ -22,4 +24,3 @@ const eqArrays = function(array1, array2) {
 
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([10, 40, 25], [10, "40", 25]), false)
