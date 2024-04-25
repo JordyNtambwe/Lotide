@@ -23,5 +23,5 @@ const assertArraysEqual = function(array1, array2) {
 
 };
 
-assertArraysEqual(eqArrays(["Lighthouse Labs"], ["Bootcamp"]), false);
-assertArraysEqual(eqArrays([1], [1]), true);
+assertArraysEqual(["Lighthouse Labs"], ["Bootcamp"]);
+assertArraysEqual([1], [1]);
