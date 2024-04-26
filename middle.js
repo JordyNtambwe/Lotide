@@ -37,8 +37,8 @@ const middle = function(array) {
   } else {
     return [(array[Math.floor(array.length / 2)])];
   }
-  return results;
-}
+
+};
 
 // TEST CODE
 assertArraysEqual(middle([1, 2, 3]), [2]);
