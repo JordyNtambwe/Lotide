@@ -26,10 +26,8 @@ const eqArrays = function(array1, array2) {
 // The 'middle' function takes an array and returns an array containing the middle elements of the input array
 const middle = function(array) {
 
-  let results = []
-
   if (array.length <= 2) {
-    return results;
+    return [];
   }
 
   if (array.length % 2 === 0) {
