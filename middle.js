@@ -37,3 +37,4 @@ const middle = function(array) {
   }
   return results;
 }
+
