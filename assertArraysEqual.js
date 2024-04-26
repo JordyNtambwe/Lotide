@@ -28,3 +28,5 @@ assertArraysEqual(["Lighthouse Labs"], ["Bootcamp"]);
 assertArraysEqual([1], [1]);
 assertArraysEqual([1, 3, 5], [1, 3, 5]);
 assertArraysEqual(["Hell0 World"], ["Hello World"])
+
+Implemented a function that takes in an array and returns the middle-most element(s) of the given array!

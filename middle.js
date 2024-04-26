@@ -25,7 +25,7 @@ const eqArrays = function(array1, array2) {
 
 const middle = function(array) {
 
-  const results = [];
+  let results = [];
 
   if (array.length === 1 || array.length === 2) {
     results = []
