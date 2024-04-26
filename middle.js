@@ -31,6 +31,8 @@ const middle = function(array) {
     return [];
   }
 
+// If the array length is even, return the two middle elements
+// If the array length is odd, return the single middle element
   if (array.length % 2 === 0) {
     return [array[(array.length / 2) - 1], array[(array.length / 2)]];
   } else {
