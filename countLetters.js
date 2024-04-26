@@ -8,14 +8,17 @@ const assertEqual = function(actual, expected) {
   
 };
 
-const countLetters = function(items) {
+const countLetters = function(words) {
 
   const results = {};
 
-  for (const item of items) {
-    if(results[item]) {
-      return results[item] += 1
+  for (const letters of words) {
+    if(results[letters]) {
+      results[letters] += 1;
+    } else {
+      results[letters] + 1;
     }
   }
+  return results;
 
 };
