@@ -25,7 +25,7 @@ const eqArrays = function(array1, array2) {
 
 const flatten = function(array) {
 
-  let results = []
+  const results = []
 
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
