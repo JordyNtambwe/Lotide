@@ -36,6 +36,11 @@ const without = function(source, itemsToRemove) {
 
 };
 
+// Check if the original array isn't modified by the "without" function
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]); 
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
 // TEST CODE
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); 
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
