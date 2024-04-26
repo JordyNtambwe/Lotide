@@ -27,9 +27,7 @@ const middle = function(array) {
 
   let results = [];
 
-  if (array.length <= 2) {
-    return [];
-  } else if (array.length % 2 === 0) {
+  if (array.length % 2 === 0) {
     results.push(array[(array.length / 2) - 1]);
     results.push(array[(array.length / 2)]);
   } else {
