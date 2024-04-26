@@ -30,7 +30,7 @@ const middle = function(array) {
   if (array.length === 1 || array.length === 2) {
     results = []
   } else if (array.length % 2 === 0 && array.length > 2) {
-    results.push(array[(array.length / 2)] - 1);
+    results.push(array[(array.length / 2) - 1]);
     results.push(array[(array.length / 2)]);
   } else if (array.length % 2 === 1 && array.length > 2) {
     results.push(array[Math.floor(array.length / 2)]);
