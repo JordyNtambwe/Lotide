@@ -8,11 +8,11 @@ const assertEqual = function(actual, expected) {
   
 };
 
-const countLetters = function(words) {
+const countLetters = function(sentence) {
 
   const results = {};
 
-  for (const letters of words) {
+  for (const letters of sentence) {
     if(results[letters]) {
       results[letters] += 1;
     } else {
@@ -23,4 +23,8 @@ const countLetters = function(words) {
 
 };
 
-assertEqual(countLetters("lighthouse in the house"));
+// TEST CODE
+const result = countLetters("lighthouse in the house");
+assertEqual(result['h'], 4);
+assertEqual(result['a'], undefined);
+assertEqual(result['o'], 2);
