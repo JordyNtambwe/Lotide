@@ -23,6 +23,7 @@ const assertArraysEqual = function(array1, array2) {
 
 };
 
+// TEST CODE
 assertArraysEqual(["Lighthouse Labs"], ["Bootcamp"]);
 assertArraysEqual([1], [1]);
 assertArraysEqual([1, 3, 5], [1, 3, 5]);
