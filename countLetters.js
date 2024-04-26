@@ -16,9 +16,11 @@ const countLetters = function(words) {
     if(results[letters]) {
       results[letters] += 1;
     } else {
-      results[letters] + 1;
+      results[letters] = 1;
     }
   }
   return results;
 
 };
+
+assertEqual(countLetters("lighthouse in the house"));
