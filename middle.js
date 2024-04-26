@@ -26,6 +26,7 @@ const eqArrays = function(array1, array2) {
 // The 'middle' function takes an array and returns an array containing the middle elements of the input array
 const middle = function(array) {
 
+// If the array has less than 3 elements, there is no 'middle' element(s), so return an empty array
   if (array.length <= 2) {
     return [];
   }
