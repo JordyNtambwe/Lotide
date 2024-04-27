@@ -31,6 +31,7 @@ const letterPositions = function (sentence) {
     if (sentence[i] !== " ") {
     }
   return results;
+  };
 };
 
 assertArraysEqual(letterPositions("hello").e, [1]);
