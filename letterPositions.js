@@ -28,11 +28,10 @@ const letterPositions = function (sentence) {
   const results = {};
   
   for (let i = 0; i < sentence.length; i++) {
-    let number = 0
-    if (sentence[i] !== " ") {
-      if (sentence[i] !== sentence[number]) {
-        results.push(sentence[i])
-      }
+   if (sentence[i]) {
+    results[sentence[i] += 1]
+    } else {
+      results[sentence] = 1
     }
   }
   return results;
