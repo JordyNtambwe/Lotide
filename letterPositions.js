@@ -29,14 +29,19 @@ const letterPositions = function (sentence) {
   
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") {
-      if (results(sentence[i])) {
-        results(sentence[i]).push(i)
+      if (results[sentence[i]]) {
+        results[sentence[i]].push(i)
       } else {
-        results(sentence[i]) = [i]
+        results[sentence[i]] = [i]
       }
     }
-  return results;
   };
+  return results;
+
 };
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+// TEST CODE
+assertArraysEqual(letterPositions("lighthouse in the house").e, [2]);
+assertArraysEqual(letterPositions("lighthouse in the house").h, [4]);
+assertArraysEqual(letterPositions("lighthouse in the house").g, [1]);
+assertArraysEqual(letterPositions("lighthouse in the house").s, [2]);
