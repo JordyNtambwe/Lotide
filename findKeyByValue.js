@@ -10,9 +10,12 @@ const assertEqual = function(actual, expected) {
 
 const findKeyByValue = function (object, value) {
 
-  for (const keys of object) {
+  for (const keys of object.keys(object)) {
+    if (object[keys] === object.keys[object]) {
+      return keys
+    }
   }
-
+  
 
 
   };
