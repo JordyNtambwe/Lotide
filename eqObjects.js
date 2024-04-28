@@ -26,14 +26,14 @@ const eqArrays = function(array1, array2) {
 
 const eqObjects = function (object1, object2) {
 
-  let key1 = Object.keys(object1);
-  let key2 = Object.keys(object2);
+  let keys1 = Object.keys(object1);
+  let keys2 = Object.keys(object2);
 
-  if (key1.length !== key2.length) {
+  if (keys1.length !== keys2.length) {
     return false;
   }
 
-  for (const key of key1) {
+  for (const key of keys1) {
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       if(!eqArrays(object1[key], object2[key])) {
           return false;
@@ -47,18 +47,21 @@ const eqObjects = function (object1, object2) {
 };
 
 
-// TEST CODE
+// TEST CODE #1: Objects that have primitive values
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 
+// TEST CODE #2
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
 
+// TEST CODE #3: Objects with arrays as values
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true);
 
+// TEST CODE #4
 const longSleeveMultiColorShirtObject = {
   size: "medium",
   colors: ["red", "blue"],
