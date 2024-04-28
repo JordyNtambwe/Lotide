@@ -10,13 +10,13 @@ const assertEqual = function(actual, expected) {
 
 const findKeyByValue = function (object, value) {
 
-  for (const keys of object.keys(object)) {
+  for (const keys of Object.keys(object)) {
     if (object[keys] !== value) {
       return undefined
     }
   }
-  return keys
-  
+  return object[keys]
+
 };
 
 // TEST CODE
