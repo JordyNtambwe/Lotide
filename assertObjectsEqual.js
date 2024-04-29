@@ -31,9 +31,3 @@ const assertObjectsEqual = function (actual, expected) {
   }
   
 };
-
-// TEST CODE
-assertObjectsEqual(["Lighthouse Labs"], ["Bootcamp"]);
-assertObjectsEqual([1], [1]);
-assertObjectsEqual([1, 3, 5], [1, 3, 5]);
-assertObjectsEqual(["Hell0 World"], ["Hello World"])
