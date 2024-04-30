@@ -25,11 +25,13 @@ const eqArrays = function(array1, array2) {
 
 const takeUntil = function(array, callback) {
 
-  for (let i = 0; i < array.length; i++) {
-    if (callback(array[i])) {
-      array.splice(i);
-      return array;
+  const result = [];
+
+  for (const element of array) {
+    if (callback(element)) {
+      result.push(element);
     }
   }
+  return result;
 
 };
