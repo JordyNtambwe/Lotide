@@ -33,3 +33,9 @@ const map = function (array, callback) {
   return results;
 
 };
+
+// TEST CODE
+const words = ["ground", "control", "to", "major", "tom"];
+const expected = ["g", "c", "t", "m", "t"];
+
+assertArraysEqual(map(words, word => word[0]), expected);
