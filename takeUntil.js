@@ -23,14 +23,14 @@ const eqArrays = function(array1, array2) {
 
 };
 
-function takeUntil(array, callback) {
+const takeUntil = function(array, callback) {
 
   const result = [];
 
   for (const element of array) {
     if (callback(element)) {
+      result.push(element);
     }
-    result.push(element);
   }
   return result;
 
