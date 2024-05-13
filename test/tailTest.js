@@ -7,13 +7,13 @@ const results = tail(["Hello", "Lighthouse", "Labs"]);
 
 describe("#tail", () => {
   it("returns 3 for [Yo Yo, Lighthouse, Labs]", () => {
-    assert.strictEqual(words.length, 3);
+    assert.deepEqual(words.length, 3);
   });
   it("returns Labs for tail([Hello, Lighthouse, Labs])", () => {
     assert.deepEqual(results[1], "Labs");
   });
   it("returns 0 for tail([Hello, Lighthouse, Labs])", () => {
-    assert.strictEqual(tail([]).length, 0);
+    assert.deepEqual(tail([]).length, 0);
   });
 
 });
