@@ -5,13 +5,13 @@ describe("#countLetters", () => {
 
   const result = countLetters("lighthouse in the house");
 
-  it("returns 4 for [h]", () => {
+  it("should return 4 for ['h']", () => {
     assert.strictEqual(result['h'], 4);
   });
-  it("returns undefined for [a]", () => {
+  it("should return undefined for ['a']", () => {
     assert.strictEqual(result['a'], undefined);
   });
-  it("returns 2 for [o]", () => {
+  it("should return 2 for ['o']", () => {
     assert.strictEqual(result['o'], 2);
   });
 

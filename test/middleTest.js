@@ -11,7 +11,7 @@ describe("#middle", () => {
   it("returns [2, 3] for [1, 2, 3, 4]", () => {
     assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
   });
-  it("make sure the original array was not altered by the middle function", () => {
+  it("original array was not altered by the middle function", () => {
     const words = ["hello", "world", "lighthouse"];
     const result = middle(words);
     assert.deepEqual(result, ["world"]);
