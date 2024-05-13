@@ -9,7 +9,7 @@ describe("#tail", () => {
   it("returns 3 for [Yo Yo, Lighthouse, Labs]", () => {
     assert.strictEqual(words.length, 3);
   });
-  it("returns Lighthouse for tail([Hello, Lighthouse, Labs])", () => {
+  it("returns Labs for tail([Hello, Lighthouse, Labs])", () => {
     assert.strictEqual(results[1], "Labs");
   });
   it("returns 0 for tail([Hello, Lighthouse, Labs])", () => {
