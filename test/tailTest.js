@@ -6,11 +6,12 @@ const results = tail(["Hello", "Lighthouse", "Labs"]);
 
 describe("#tail", () => {
   it("original array length remains the same after tail function is called", () => {
+    tail(words);
     assert.deepEqual(words.length, 3);
   });
-  it("returns Labs for tail([Hello, Lighthouse, Labs])", () => {
-    assert.deepEqual(results[1], "Labs");
-  });
+  it("returns ['Lighthouse', 'Labs'] for tail(['Hello', 'Lighthouse', 'Labs'])", () => {
+    assert.deepEqual(results, ["Lighthouse", "Labs"]);
+});
   it("returns 0 for tail([Hello, Lighthouse, Labs])", () => {
     assert.deepEqual(tail([]).length, 0);
   });
