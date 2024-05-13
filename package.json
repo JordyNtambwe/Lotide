@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@ntambwe.j/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A clone of the lodash JavaScript library to practice creating various types of functions using Javascript",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/JordyNtambwe/Lotide.git"
   },
-  "author": "",
+  "author": "Jordy Ntambwe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JordyNtambwe/Lotide/issues"
