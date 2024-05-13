@@ -12,7 +12,7 @@ describe("#tail", () => {
   it("returns ['Lighthouse', 'Labs'] for tail(['Hello', 'Lighthouse', 'Labs'])", () => {
     assert.deepEqual(results, ["Lighthouse", "Labs"]);
 });
-  it("returns 0 for tail([Hello, Lighthouse, Labs])", () => {
+  it("original array length remains the same after tail function is called", () => {
     assert.deepEqual(tail([]).length, 0);
   });
 
