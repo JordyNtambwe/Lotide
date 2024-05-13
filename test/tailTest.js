@@ -9,7 +9,7 @@ describe("#tail", () => {
     assert.deepEqual(words.length, 3);
   });
   it("returns Labs for tail([Hello, Lighthouse, Labs])", () => {
-    assert.deepEqual(tail(results[1], "Labs"));
+    assert.deepEqual(results[1], "Labs");
   });
   it("returns 0 for tail([Hello, Lighthouse, Labs])", () => {
     assert.deepEqual(tail([]).length, 0);
