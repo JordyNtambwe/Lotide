@@ -1,10 +1,9 @@
 const assert = require('chai').assert;
 const tail = require("../tail");
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-
 describe("#tail", () => {
   it("original array length remains the same after tail function is called", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
     tail(words);
     assert.deepEqual(words.length, 3);
   });
