@@ -7,13 +7,13 @@ const results = tail(["Hello", "Lighthouse", "Labs"]);
 
 describe("#tail", () => {
   it("returns 3 for [Yo Yo, Lighthouse, Labs]", () => {
-    assert.strictEqual(assertEqual(words.length, 3));
+    assert.strictEqual(words.length, 3);
   });
   it("returns Lighthouse for tail([Hello, Lighthouse, Labs])", () => {
-    assert.strictEqual(assertEqual(results[1], "Labs"));
+    assert.strictEqual(results[1], "Labs");
   });
   it("returns 0 for tail([Hello, Lighthouse, Labs])", () => {
-    assert.strictEqual(assertEqual(tail([]).length, 0));
+    assert.strictEqual(tail([]).length, 0);
   });
 
 });
