@@ -35,6 +35,7 @@ The following functions are currently implemented:
 - eqObjects(...): Compares two objects!
 - findKey(...): Scans the object and returns the first key for which the callback returns a truthy value!
 - findKeyByValue(...): Searches for a key on an object where its value matches a given value!
+- flatten(...): Flattens an array of arrays into a single-level array
 - head(...): Retrieves the first element from the array!
 - index(...): List of all the functions in an object!
 - letterPositions(...): Returns all the indices in the string where each character is found!
